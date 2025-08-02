@@ -1,0 +1,35 @@
+{
+    "name": "rmdmostakim/bdsms",
+    "description": "A flexible and extensible Laravel package for sending SMS through multiple Bangladeshi and international gateways, including Twilio, SSL Wireless, MimSMS, Infobip. Easily configurable and developer-friendly.",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^9.0|^10.0",
+        "laravel/framework": "^9.0|^10.0",
+        "twilio/sdk": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "RmdMostakim\\BdSms\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RmdMostakim\\BdSms\\SmsServiceProvider"
+            ],
+            "aliases": {
+                "BdSms": "RmdMostakim\\BdSms\\Facades\\BdSms"
+            }
+        }
+    },
+    "authors": [
+        {
+            "name": "Rmdmostakim",
+            "email": "simplemostak@gamil.com",
+            "role": "Developer",
+            "homepage": "https://github.com/Rmdmostakim/bdsms"
+        }
+    ]
+}
