@@ -111,6 +111,7 @@ class MimSms implements SmsInterface
             $response = Http::withHeaders([
                 'Accept'       => 'application/json',
                 'Content-Type' => 'application/json',
+                'Authorization: Bearer',
             ])->post($this->apiUrl, $payload)->throw();
 
             return $response->json();
